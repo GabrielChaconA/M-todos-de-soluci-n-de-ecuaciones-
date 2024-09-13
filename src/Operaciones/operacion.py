@@ -14,6 +14,10 @@ class operacion:
            print ("solicitar nuevo valor")
 
        return evaluar.evaluar_Funtcion(a)* evaluar.evaluar_Funtcion(b)
+    
+
+
+
      
        
     

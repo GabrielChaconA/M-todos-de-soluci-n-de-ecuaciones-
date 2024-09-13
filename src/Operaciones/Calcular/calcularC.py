@@ -9,6 +9,10 @@ class calcularC:
     
     def calcular_Falsa_Posicion(self, a, b):
 
-     instancia_evaluar = evaluar()
+     instancia_evaluar = evaluar()  
      return (((a * instancia_evaluar.evaluar_Funcion(b)) - (b * instancia_evaluar.evaluar_Funcion(a))) / (instancia_evaluar.evaluar_Funcion(b) - instancia_evaluar.evaluar_Funcion(a)))
 
+    def calcular_nuevo_valor(self,x1,x11,fx11,fx1):
+
+
+      return  ( x11-fx11*((x11-(x1))/(fx11-(fx1))))

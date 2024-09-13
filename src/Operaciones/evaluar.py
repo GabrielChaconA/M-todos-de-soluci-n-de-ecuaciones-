@@ -9,4 +9,7 @@ class evaluar:
     
     def evaluar_Funcion_derivada(self,a):
         return(math.exp(a)*(1/4))
+    
+    def evaluar_Funcion_secante(self, a):
+        return (a**2)-7
 
