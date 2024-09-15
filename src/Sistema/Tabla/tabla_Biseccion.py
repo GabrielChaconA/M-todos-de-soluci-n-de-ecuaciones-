@@ -1,8 +1,6 @@
 
 
-from Operaciones.evaluar import evaluar
-from Operaciones.Calcular.calcularC import calcularC
-from Errores.errorR import errorR
+
 class tabla_Biseccion:
     """ Esta tabla contiene los valores y la ejecucion del metodo "Biseccion" """
     def tabla_de_valores_Biseccion(self):

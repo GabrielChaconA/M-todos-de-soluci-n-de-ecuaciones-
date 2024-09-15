@@ -19,6 +19,13 @@ class calcularC:
     def calcular_nuevo_valor_raices_multiples(self,x1):
      isinstancia_evaluar = evaluar()
      return x1-((isinstancia_evaluar.evaluar_Funcion_raices(x1)*isinstancia_evaluar.evaluar_Funcion_raices_derivada(x1,1))/(((isinstancia_evaluar.evaluar_Funcion_raices_derivada(x1,1))**2)-(  isinstancia_evaluar.evaluar_Funcion_raices(x1)*isinstancia_evaluar.evaluar_Funcion_raices_derivada(x1,2)  )))
+   
+    def calcular_nuevo_valor_raices_multiples(self,x1):
+       isinstancia_evaluar = evaluar()
+       return x1-isinstancia_evaluar.evaluar_nw_derivada(x1,1)
     
+    def calcular_nuevo_valor_nw(self,x1):
+       isinstancia_evaluar = evaluar()
+       return x1-(isinstancia_evaluar.evaluar_nw_derivada(x1,0)/isinstancia_evaluar.evaluar_nw_derivada(x1,1))
 
     

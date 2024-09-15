@@ -4,6 +4,7 @@ from Sistema.Tabla.tabla_Falsa_posicion import tabla_Falsa_posicion
 from Sistema.Tabla.tabla_Punto_Fijo import tabla_Punto_Fijo
 from Sistema.Tabla.tabla_Secante import tabla_Secante
 from Sistema.Tabla.trabla_raices_multiples import tabla_raices_multiples
+from Sistema.Tabla.tabla_Neton_Raphson import tabla_Neton_Raphson
 class Menu:
     
     option = 1
@@ -13,7 +14,8 @@ class Menu:
        instansce_Punto_fijo = tabla_Punto_Fijo()
        instance_Secante = tabla_Secante()
        instance_Raioes_multiples = tabla_raices_multiples()
-       option = int(input("\nBIENVENIDO A MENU PRINCIPAL\nSelecciones el metodo: \n1.Biseccion \n2. Falsa posicion \n3.Punto fijo\n4.Secante \n5. Raices multiples\n"))
+       instance_ne = tabla_Neton_Raphson()
+       option = int(input("\nBIENVENIDO A MENU PRINCIPAL\nSelecciones el metodo: \n1.Biseccion \n2. Falsa posicion \n3.Punto fijo\n4.Secante \n5. Raices multiples\n6.Newton Raphson \n"))
        if option == 1 :
             isinstance_biseccion.tabla_de_valores_Biseccion()
        if option == 2:
@@ -24,6 +26,9 @@ class Menu:
            instance_Secante.tabla_Secante()
        if option == 5:
            instance_Raioes_multiples.tabla_raices_multiples()
+       if option == 6:
+           instance_ne.tabla_Neton_Raphson()
+           
            
             
      

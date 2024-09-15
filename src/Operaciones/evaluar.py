@@ -24,6 +24,14 @@ class evaluar:
     
     def evaluar_Funcion_raices(self,x):
         return round(x**3 - 5*x**2 + 7*x -3,4)
+    
+
+    def  evaluar_nw_derivada(self,a,n):
+        x,y = sp.symbols('x y')
+        function = (x**2)-7
+        d = sp.diff(function,x,n)
+        derivada_evaluada = d.subs(x,a)
+        return derivada_evaluada
 
 
 
