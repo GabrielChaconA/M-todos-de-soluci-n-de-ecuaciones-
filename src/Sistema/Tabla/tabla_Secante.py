@@ -1,15 +1,15 @@
 
 from Operaciones.evaluar import evaluar
-from Operaciones.Calcular.calcularC import calcularC
-from Errores.errorR_secante import errorR_secante
+from Operaciones.Calcular.calcular_Nuevo_Valor import calcular_Nuevo_Valor
+from Errores.errorR import errorR
 
 class tabla_Secante:
     def tabla_Secante(self):
         
         #instancias de clases 
         instance_evaluar = evaluar()
-        instance_calcularC = calcularC()
-        instance_errorR = errorR_secante()
+        instance_calcularC = calcular_Nuevo_Valor()
+        instance_errorR = errorR()
         #variables de valores de tabla ( iniciales )
         x1 = 0
         x11= 1
@@ -19,7 +19,7 @@ class tabla_Secante:
         flag = True 
         while(flag):
          x2 =instance_calcularC.calcular_nuevo_valor(x1,x11,instance_evaluar.evaluar_Funcion_secante(x11),instance_evaluar.evaluar_Funcion_secante(x1))
-         error = instance_errorR.errorR_secante(x2,x11)
+         error = instance_errorR.errorR(x2,x11)
        
          
          print("{} | {} | {} | {} |  {} | {} | {}% | ".format(i, x1, x11, instance_evaluar.evaluar_Funcion_secante(x1),instance_evaluar.evaluar_Funcion_secante(x11),x2, error))

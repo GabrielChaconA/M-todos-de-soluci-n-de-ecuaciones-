@@ -2,10 +2,10 @@ import sympy as sp
 from sympy import cos, sin, log
 import math
 class evaluar:
+    ##Aqui se desarrollan todas las funciones de los metodos
     def evaluar_Funcion(self, a):
         return (math.exp(2*a)) -3
     
-
     def evaluar_Funcion_PF(self, a):
         return ((math.exp(a))-4*a)
     
@@ -21,9 +21,6 @@ class evaluar:
         d = sp.diff(function,x,n)
         derivada_evaluada = d.subs(x,a)
         return derivada_evaluada
-    
-    def evaluar_Funcion_raices(self,x):
-        return round(x**3 - 5*x**2 + 7*x -3,4)
     
 
     def  evaluar_nw_derivada(self,a,n):

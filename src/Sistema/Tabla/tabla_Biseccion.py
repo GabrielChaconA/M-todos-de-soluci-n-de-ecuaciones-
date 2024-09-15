@@ -1,5 +1,7 @@
 
-
+from Operaciones.evaluar import evaluar
+from Operaciones.Calcular.calcular_Nuevo_Valor import calcular_Nuevo_Valor
+from Errores.errorR import errorR
 
 class tabla_Biseccion:
     """ Esta tabla contiene los valores y la ejecucion del metodo "Biseccion" """
@@ -7,7 +9,7 @@ class tabla_Biseccion:
     
         #instancias de clases 
         instance_evaluar = evaluar()
-        instance_calcularC = calcularC()
+        instance_calcularC = calcular_Nuevo_Valor()
         instance_errorR = errorR()
         #variables de valores de tabla ( iniciales )
         a = 0
@@ -27,7 +29,7 @@ class tabla_Biseccion:
          fb = instance_evaluar.evaluar_Funcion(b)
          fc = instance_evaluar.evaluar_Funcion(c) 
          if a !=0 :
-            error = instance_errorR .errorRelativo(c,c_Anterior)
+            error = instance_errorR .errorR(c,c_Anterior)
             if error <= instance_errorR .error_Tolerable:
                print("fin ")
                break

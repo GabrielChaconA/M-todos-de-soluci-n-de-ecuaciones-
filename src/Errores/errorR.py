@@ -1,7 +1,5 @@
 class errorR:
-
-    """ el error actual y anterior se refiere a los valores de C  """
+    #aqui se utilizan los valores de la funcion evaluada en c, el actual y anterior
     error_Tolerable = 0.005
-    def errorRelativo(self,aActual,aAnterior):
-        return abs(100*((aActual-aAnterior)/aActual))
-     
+    def errorR(self, x2,x11):
+        return round(abs(((x2-x11)/x2)*100),4)
