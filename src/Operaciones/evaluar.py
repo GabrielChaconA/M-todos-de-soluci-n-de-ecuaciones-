@@ -29,6 +29,15 @@ class evaluar:
         d = sp.diff(function,x,n)
         derivada_evaluada = d.subs(x,a)
         return derivada_evaluada
+    
+    def evaluar_muller(self,a, n, function):
+     x = sp.symbols('x')
+     d = sp.diff(function, x, n)  # Derivar la función n veces respecto a x
+     evaluada = d.subs(x, a)
+      # Evaluar la derivada en el punto a
+     return evaluada
+
+
 
 
 

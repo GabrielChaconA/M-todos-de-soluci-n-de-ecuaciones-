@@ -10,12 +10,12 @@ class tabla_Neton_Raphson:
         instance_calcularC = calcular_Nuevo_Valor()
         instance_errorR = errorR()
         #variables de valores de tabla ( iniciales )
-        x1 = 1
+        x1 =int(input("De un valor: "))
         i = 0
       
         print("i | x1 | f(x1) | f´(x1) | x1+1 | Error relativo")
         flag = True 
-        if instance_evaluar.evaluar_nw_derivada(x1,0) == 0:
+        if instance_evaluar.evaluar_nw_derivada(x1,0) == 0 :
             print(instance_evaluar.evaluar_nw_derivada(x1,0)+ " es la raiz")
         else:
          while(flag):

@@ -11,9 +11,13 @@ class tabla_Secante:
         instance_calcularC = calcular_Nuevo_Valor()
         instance_errorR = errorR()
         #variables de valores de tabla ( iniciales )
-        x1 = 0
-        x11= 1
+        x1 = int(input("Escriba valor x1: "))
+        x11= int(input("Escriba valor x11: "))
         i = 0
+        if instance_evaluar.evaluar_Funcion_secante(x1) == 0 :
+            print(x1 + "Es raíz ")
+        if instance_evaluar.evaluar_Funcion_secante(x11) == 0: 
+                print(x11 +"Es raíz")
       
         print("i | x1 | x1 +1 | f(x1) | f(x1+1)| x1+2 | Error relativo")
         flag = True 

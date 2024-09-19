@@ -12,8 +12,8 @@ class tabla_Biseccion:
         instance_calcularC = calcular_Nuevo_Valor()
         instance_errorR = errorR()
         #variables de valores de tabla ( iniciales )
-        a = 0
-        b = 1
+        a = int(input("Escriba valor a: "))
+        b = int(input("Escriba valor b: "))
         c_Anterior = 0
         error = 0
 
@@ -53,7 +53,8 @@ class tabla_Biseccion:
                
             
          if  fa*fb >0:
-            print(" necesitas otro valor de a")
-            flag = False
+            print(" necesitas otro valores")
+            a = int(input("Escriba a: "))
+            b = int(input("Escriba b: "))
 
          c_Anterior = c
